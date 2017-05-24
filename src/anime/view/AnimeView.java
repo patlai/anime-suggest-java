@@ -176,7 +176,7 @@ public class AnimeView extends JFrame {
 		errorMessage = new JLabel();
 		errorMessage.setForeground(Color.RED);		
 		refresh = new JButton();
-		refresh.setText("Refresh: 420 Blaze IT");
+		refresh.setText("Refresh");
 		refresh.addActionListener(new java.awt.event.ActionListener(){
 			public void actionPerformed(java.awt.event.ActionEvent evt){
 				error = null;
@@ -223,7 +223,7 @@ public class AnimeView extends JFrame {
 		s = s.replace("\\", "\\\\"); 
 //		System.out.println(s);
 		try {
-			myPicture = ImageIO.read(new File(s+File.separator+"banner.png")); //append image to current directory path
+			myPicture = ImageIO.read(new File(s+File.separator+"dbz.jpg")); //append image to current directory path
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
